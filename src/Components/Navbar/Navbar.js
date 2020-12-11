@@ -1,24 +1,25 @@
-import React from "react"
-import './Navbar.css';
+import React, {useContext} from "react"
+import {cartContext} from "../../Contexts/cartContext"
+import {Link} from "react-router-dom"
+import './Navbar.css'
 
-const Navbar = () => {
-   return(
+
+const Navbar = ({cartToggle}) => {
+   const {shoppingCart} = useContext(cartContext);
+    return(
         <nav>
  <ul className="left">
- <li>Online Shop</li>
- {/* <li><form>
-     <input type="text" className="search" placeholder="Search Product..."/>
-     </form></li> */}
+ <li><Link to="/">Super 🖥   Market</Link></li>
+ 
+ 
+    
  </ul>
  <ul className="right">
- </ul>
- <ul className="right">
-<span className="dollor"><i className="fas fa-cart-plus"></i></span>
-<span className="shoppingCartTotal"></span>
+    <li onClick={cartToggle}><Link to="/cart"><span className="dollor"><i className="fas fa-cart-plus"></i></span>
+    <span className="shoppingCartTotal">{shoppingCart ? shoppingCart.length : 0}</span></Link></li>
  </ul>
 </nav>
-   );
-   
+    )
 
 }
 

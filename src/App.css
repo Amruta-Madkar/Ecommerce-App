@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: sans-serif;
+  background: #ffff;
+  font-family: 'Lato', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.img{
+  width: 90px;
+  
+}
+
+
+
+.search {
+  width: 300px;
+  padding: 12px 22px;
+  border:none;
+  outline: none;
+  margin-left: 30px;
+  border-radius: 30px;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc; 
+}
+
+@media(max-width: 765px){
+  .products{
+    flex-wrap: wrap;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .product {
+   width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .headerText {
+    padding: 0 100px;
+  }
+  .headerText h1 {
+    font-size: 20px;
+  }
+  .cartContainer {
+    flex-direction: column;
+  }
+  .cartDetails {
+    width: 100%;
+  }
+  .cartSummary {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cart {
+    flex-direction:column;
+  }
+  
+  .cartProductName {
+    width: 250px;
+    padding: 14px 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .cartProductPrice {
+    width: 120px;
+    padding: 14 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .inc {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #222;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+  .productQuantity {
+    display: inline-block;
+    padding: 14 15px;
+    font-size: 16px;
+    width: 70px;
+    text-align: center;
+  }
+  .dec {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #222;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+  .productTotalPrice {
+    display: inline-block;
+    width: 150px;
+    padding: 14px 15px;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
   }
 }

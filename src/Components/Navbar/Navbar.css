@@ -1,0 +1,62 @@
+nav {
+  width: 100%;
+  background:blue;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top:0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  padding: 0 103px;
+  display: flex;
+  z-index: 9999;
+}
+
+nav ul {
+  width: 50%;
+}
+
+nav .left {
+  text-align: left;
+  margin-top: -10px;
+}
+
+nav .left li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+nav .right {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #222;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #222;
+}
+
+nav ul li .shoppingCartTotal {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background:white ;
+  border-radius: 50%;
+  color: black;
+  line-height: 35px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+}
+
+.dollor {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
